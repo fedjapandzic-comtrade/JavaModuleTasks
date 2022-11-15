@@ -2,35 +2,38 @@ package TaskBalloonAssignment;
 
 public class Solution {
 
-    public int solution(String S){
-    int b = 0;
-    int a = 0;
-    int l = 0;
-    int o = 0;
-    int n = 0;
-    char character;
-        for(int i = 0 ; i < S.length() ; i++)
-    {
-        character = S.charAt(i);
-        if(Character.compare(character,'B') == 0){
-            b++;
-        }
-        else if(Character.compare(character,'A') == 0){
-            a++;
-        }
-        else if(Character.compare(character,'L') == 0){
-            l++;
-        }
-        else if(Character.compare(character,'O') == 0){
-            o++;
-        }
-        else if(Character.compare(character,'N') == 0){
-            n++;
-        }
-    }
-    l = l/2;
-    o = o/2;
+    public int solution(String word,String S){
+    int[] alphabetForWord = new int[26];
+    int[] alphabet = new int[26];
 
-        return Math.min(b , Math.min(a , Math.min(l, Math.min(o , n))));
+    for (int i = 0; i < word.length(); i++) {
+        alphabetForWord[word.charAt(i) - 'A']++;
+    }
+
+    for (int i = 0;i<S.length();i++){
+        alphabet[S.charAt(i) - 'A']++;
+    }
+
+    int counter = 0;
+    boolean isTrue = true;
+
+    while (isTrue){
+
+        for (int i = 0;i<alphabet.length;i++) {
+            if (alphabet[i] - alphabetForWord[i] >= 0) {
+                alphabet[i] = alphabet[i] - alphabetForWord[i];
+            } else {
+                isTrue = false;
+                break;
+            }
+            if (i==25){
+                counter++;
+            }
+        }
+
+    }
+
+
+    return counter;
 }
 }

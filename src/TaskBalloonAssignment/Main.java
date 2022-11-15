@@ -7,9 +7,13 @@ public class Main {
     {
         Solution solution = new Solution();
         Scanner scanner = new Scanner(System.in);
+        System.out.print("Please enter your word(in capital letters!): ");
+        String word = scanner.nextLine();
         System.out.print("Please enter your string(in capital letters!): ");
         String letters = scanner.nextLine();
-        System.out.println("Possible instances of the word \"BALLOON\" in the string is: " + solution.solution(letters));
+
+        System.out.println("The number of times the word \"" + word + "\" can be written is:" + solution.solution(word,letters));
+
     }
 
 }
