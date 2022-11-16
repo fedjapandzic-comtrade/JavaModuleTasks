@@ -8,12 +8,15 @@ public class Solution {
 
     for (int i = 0; i < word.length(); i++) {
         if((word.charAt(i) - 'A') > 25 || (word.charAt(i) - 'A') < 0) {
-            throw new IncorrectInputInFile("File contains small letters/number/special characters.");
+            throw new IncorrectInputInFileException("File contains small letters/number/special characters.");
         }
         alphabetForWord[word.charAt(i) - 'A']++;
     }
 
     for (int i = 0;i<S.length();i++){
+        if((S.charAt(i) - 'A') > 25 || (S.charAt(i) - 'A') < 0) {
+            throw new IncorrectInputInFileException("File contains small letters/number/special characters.");
+        }
         alphabet[S.charAt(i) - 'A']++;
     }
 
