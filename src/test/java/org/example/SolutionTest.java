@@ -15,11 +15,12 @@ class SolutionTest {
     private static final Logger logger = LoggerFactory.getLogger(SolutionTest.class);
 
     @BeforeAll
-    public static void startedSolutionTestClass(){
+    public static void startedSolutionTestClass() {
         logger.info("Solution tests started.");
     }
+
     @AfterAll
-    public static void finishedSolutionTestClass(){
+    public static void finishedSolutionTestClass() {
         logger.info("Solution tests finished.");
     }
 
@@ -30,34 +31,34 @@ class SolutionTest {
         String string = "TESTTESTTESTTESSSTTTT";
         Solution solution = new Solution();
 
-        int result = solution.solution(word,string);
+        int result = solution.solution(word, string);
 
-        assertEquals(4,result);
+        assertEquals(4, result);
         logger.info("Test for using correct word and string in solution method of Solution class passed.");
     }
 
     @Test
-    void throwsIncorrectInputInFileExceptionForString(){
+    void throwsIncorrectInputInFileExceptionForString() {
         logger.info("Test for exception being thrown if string has anything other than capital letters.");
-        assertThrows(IncorrectInputInFileException.class, ()->{
+        assertThrows(IncorrectInputInFileException.class, () -> {
             String word = "TEST";
             String string = "testTESTTESTTESSSTTTT";
             Solution solution = new Solution();
 
-            int result = solution.solution(word,string);
+            int result = solution.solution(word, string);
         });
         logger.info("Test for exception being thrown if string has anything other than capital letters passed.");
     }
 
     @Test
-    void throwsIncorrectInputInFileExceptionForWord(){
+    void throwsIncorrectInputInFileExceptionForWord() {
         logger.info("Test for exception being thrown if word has anything other than capital letters.");
-        assertThrows(IncorrectInputInFileException.class, ()->{
+        assertThrows(IncorrectInputInFileException.class, () -> {
             String word = "TesT";
             String string = "TESTTESTTESTTESSSTTTT";
             Solution solution = new Solution();
 
-            int result = solution.solution(word,string);
+            int result = solution.solution(word, string);
         });
         logger.info("Test for exception being thrown if word has anything other than capital letters passed.");
     }

@@ -6,28 +6,27 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) throws MissingFileException {
         Main main = new Main();
-        try{
+        try {
             FilePaths filePaths = new FilePaths();
             String createdFile = "C:\\Users\\fedjap\\IdeaProjects\\JavaModule\\src\\main\\java\\org\\example\\result.txt";
             String readingFile = "C:\\Users\\fedjap\\IdeaProjects\\JavaModule\\src\\main\\java\\org\\example\\text.txt";
-            if(args != null && args.length >0){
+            if (args != null && args.length > 0) {
                 createdFile = args[0];
                 readingFile = args[1];
-                filePaths.paths(createdFile,readingFile);
-            }else {
+                filePaths.paths(createdFile, readingFile);
+            } else {
 
-                filePaths.paths(createdFile,readingFile);
+                filePaths.paths(createdFile, readingFile);
             }
 
 
-        }
-        catch (IOException e){
+        } catch (IOException e) {
             throw new MissingFileException("File path is incorrect.");
         }
     }
 
 
-    public void solution(String createdFile,String readingFile) throws IOException{
+    public void solution(String createdFile, String readingFile) throws IOException {
         BufferedReader reader;
         reader = new BufferedReader(new FileReader(readingFile));
         String word = reader.readLine();

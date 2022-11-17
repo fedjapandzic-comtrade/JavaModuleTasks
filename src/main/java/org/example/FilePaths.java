@@ -6,6 +6,6 @@ import java.util.Scanner;
 public class FilePaths {
     public void paths(String createFilePath, String readFilePath) throws IOException {
         Main main = new Main();
-        main.solution(createFilePath,readFilePath);
+        main.solution(createFilePath, readFilePath);
     }
 }
