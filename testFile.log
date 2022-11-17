@@ -1,0 +1,7 @@
+11:24:18.651 [main] INFO  org.example.SolutionTest - Solution tests started.
+11:24:18.663 [main] INFO  org.example.SolutionTest - throwsIncorrectInputInFileExceptionForWord test started.
+11:24:18.666 [main] INFO  org.example.SolutionTest - throwsIncorrectInputInFileExceptionForWord test ended.
+11:24:18.674 [main] INFO  org.example.SolutionTest - throwsIncorrectInputInFileExceptionForString test started.
+11:24:18.674 [main] INFO  org.example.SolutionTest - throwsIncorrectInputInFileExceptionForString test ended.
+11:24:18.676 [main] INFO  org.example.SolutionTest - correctSolutionTest test started.
+11:24:18.677 [main] INFO  org.example.SolutionTest - correctSolutionTest test ended.
