@@ -7,6 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
+import java.io.Writer;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -27,10 +28,10 @@ class MainTest {
     @Test
     void solutionWorksInMain() throws IOException {
         logger.info("Testing for solution method working in Main class.");
-        Main main = new Main();
+        WriterReader writerReader = new WriterReader();
         String createdFile = "C:\\Users\\fedjap\\IdeaProjects\\JavaModule\\src\\main\\java\\org\\example\\result.txt";
         String readingFile = "C:\\Users\\fedjap\\IdeaProjects\\JavaModule\\src\\main\\java\\org\\example\\text.txt";
-        main.solution(createdFile, readingFile);
+        writerReader.writeRead(createdFile, readingFile);
         logger.info("Testing for solution method working in Main class passed.");
     }
 

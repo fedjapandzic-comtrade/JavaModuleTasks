@@ -1,8 +1,8 @@
-13:47:40.904 [main] INFO  org.example.SolutionTest - Solution tests started.
-13:47:40.913 [main] INFO  org.example.SolutionTest - Test for exception being thrown if word has anything other than capital letters.
-13:47:40.916 [main] INFO  org.example.SolutionTest - Test for exception being thrown if word has anything other than capital letters passed.
-13:47:40.923 [main] INFO  org.example.SolutionTest - Test for exception being thrown if string has anything other than capital letters.
-13:47:40.924 [main] INFO  org.example.SolutionTest - Test for exception being thrown if string has anything other than capital letters passed.
-13:47:40.926 [main] INFO  org.example.SolutionTest - Test for using correct word and string in solution method of Solution class.
-13:47:40.927 [main] INFO  org.example.SolutionTest - Test for using correct word and string in solution method of Solution class passed.
-13:47:40.929 [main] INFO  org.example.SolutionTest - Solution tests finished.
+15:02:21.563 [main] INFO  org.example.SolutionTest - Main tests started.
+15:02:21.573 [main] INFO  org.example.SolutionTest - Testing for main method throwing exception.
+15:02:21.582 [main] INFO  org.example.SolutionTest - Testing for main method throwing exception passed
+15:02:21.589 [main] INFO  org.example.SolutionTest - Testing for solution method working in Main class.
+15:02:21.597 [main] INFO  org.example.SolutionTest - Testing for solution method working in Main class passed.
+15:02:21.598 [main] INFO  org.example.SolutionTest - Testing for main method working in main.
+15:02:21.600 [main] INFO  org.example.SolutionTest - Testing for main method working in main passed.
+15:02:21.602 [main] INFO  org.example.SolutionTest - Main tests finished.
