@@ -1,6 +1,7 @@
 package org.example;
 
 
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
@@ -14,13 +15,17 @@ class SolutionTest {
     private static final Logger logger = LoggerFactory.getLogger(SolutionTest.class);
 
     @BeforeAll
-    public static void startedMainTestClass(){
+    public static void startedSolutionTestClass(){
         logger.info("Solution tests started.");
+    }
+    @AfterAll
+    public static void finishedSolutionTestClass(){
+        logger.info("Solution tests finished.");
     }
 
     @Test
     void correctSolutionTest() {
-        logger.info("correctSolutionTest test started.");
+        logger.info("Test for using correct word and string in solution method of Solution class.");
         String word = "TEST";
         String string = "TESTTESTTESTTESSSTTTT";
         Solution solution = new Solution();
@@ -28,12 +33,12 @@ class SolutionTest {
         int result = solution.solution(word,string);
 
         assertEquals(4,result);
-        logger.info("correctSolutionTest test ended.");
+        logger.info("Test for using correct word and string in solution method of Solution class passed.");
     }
 
     @Test
     void throwsIncorrectInputInFileExceptionForString(){
-        logger.info("throwsIncorrectInputInFileExceptionForString test started.");
+        logger.info("Test for exception being thrown if string has anything other than capital letters.");
         assertThrows(IncorrectInputInFileException.class, ()->{
             String word = "TEST";
             String string = "testTESTTESTTESSSTTTT";
@@ -41,12 +46,12 @@ class SolutionTest {
 
             int result = solution.solution(word,string);
         });
-        logger.info("throwsIncorrectInputInFileExceptionForString test ended.");
+        logger.info("Test for exception being thrown if string has anything other than capital letters passed.");
     }
 
     @Test
     void throwsIncorrectInputInFileExceptionForWord(){
-        logger.info("throwsIncorrectInputInFileExceptionForWord test started.");
+        logger.info("Test for exception being thrown if word has anything other than capital letters.");
         assertThrows(IncorrectInputInFileException.class, ()->{
             String word = "TesT";
             String string = "TESTTESTTESTTESSSTTTT";
@@ -54,6 +59,6 @@ class SolutionTest {
 
             int result = solution.solution(word,string);
         });
-        logger.info("throwsIncorrectInputInFileExceptionForWord test ended.");
+        logger.info("Test for exception being thrown if word has anything other than capital letters passed.");
     }
 }
