@@ -45,7 +45,7 @@ class SolutionTest {
             String string = "testTESTTESTTESSSTTTT";
             Solution solution = new Solution();
 
-            int result = solution.solution(word, string);
+            solution.solution(word, string);
         });
         logger.info("Test for exception being thrown if string has anything other than capital letters passed.");
     }
@@ -58,7 +58,7 @@ class SolutionTest {
             String string = "TESTTESTTESTTESSSTTTT";
             Solution solution = new Solution();
 
-            int result = solution.solution(word, string);
+            solution.solution(word, string);
         });
         logger.info("Test for exception being thrown if word has anything other than capital letters passed.");
     }
