@@ -17,6 +17,7 @@ Build all of the projects using one command in such a way that it is stored in .
   *	Where is the jar file stored?
   
     **Jar files are located in the .m2/repository/org/example/[name of child project]/[version of project] directory.**
+    
   
   
 
