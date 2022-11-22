@@ -16,7 +16,7 @@ Github repo for task related to the Java Module
     
   ###	Where is the jar file stored?
   
-  #### **Jar files are located in the .m2/repository/org/example/[name of child project]/[version of project] directory.**
+  #### **Jar files are located in the .m2/repository/org/example/[name of child project]/[version of project] directory and in the target directory of the child they belong to.**
 
 ## Upgrade the version of all projects;
 ## Re-build the projects (same as in step 7.)
