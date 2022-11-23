@@ -1,0 +1,12 @@
+com\example\TextService.class
+com\example\CustomServlet.class
+com\example\Main.class
+com\example\WriterReaderService.class
+com\example\IncorrectInputInTextException.class
+com\example\Reader.class
+com\example\Text.class
+com\example\WriterReader.class
+com\example\Word.class
+com\example\Solution.class
+com\example\MissingTextException.class
+com\example\WordService.class

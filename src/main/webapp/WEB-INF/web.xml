@@ -4,12 +4,24 @@
 
 <web-app>
   <servlet>
-    <servlet-name>customservlet</servlet-name>
+    <servlet-name>CustomServlet</servlet-name>
+    <servlet-class>CustomServlet</servlet-class>
     <servlet-class>com.example.CustomServlet</servlet-class>
   </servlet>
 
   <servlet-mapping>
-    <servlet-name>customservlet</servlet-name>
-    <url-pattern>/get</url-pattern>
+    <servlet-name>CustomServlet</servlet-name>
+    <url-pattern>/upload</url-pattern>
   </servlet-mapping>
+
+<!--  <servlet>-->
+<!--    <servlet-name>CustomServlet</servlet-name>-->
+<!--    <servlet-class>CustomServlet</servlet-class>-->
+<!--    <servlet-class>com.example.CustomServlet</servlet-class>-->
+<!--  </servlet>-->
+
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>CustomServlet</servlet-name>-->
+<!--    <url-pattern>/getWord</url-pattern>-->
+<!--  </servlet-mapping>-->
 </web-app>
