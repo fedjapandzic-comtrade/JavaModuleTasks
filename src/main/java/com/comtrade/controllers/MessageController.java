@@ -15,17 +15,17 @@ public class MessageController {
     @Autowired
     MessageService messageService;
 
-    @RequestMapping("/hello")
+    @RequestMapping("/hello-rest")
     public String sayHelloWorld(){
         return "Hello World";
     }
 
-    @RequestMapping("/messages")
+    @RequestMapping("/hello")
     public List<Message> getAllMessages(){
         return messageService.getMessages();
     }
 
-    @RequestMapping("/messages/{language}")
+    @RequestMapping("/hello/{language}")
     public Message getMessage(@PathVariable String language){
         return messageService.getMessage(language);
     }
