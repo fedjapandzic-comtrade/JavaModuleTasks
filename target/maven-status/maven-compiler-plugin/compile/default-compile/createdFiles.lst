@@ -1,0 +1,6 @@
+com\comtrade\controllers\HelloWorldController.class
+com\comtrade\App.class
+com\comtrade\controllers\TopicController.class
+com\comtrade\models\HelloWorld.class
+com\comtrade\models\Topic.class
+com\comtrade\services\TopicService.class

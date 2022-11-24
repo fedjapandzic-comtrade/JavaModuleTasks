@@ -1,0 +1,10 @@
+INSERT INTO hello_world_table VALUES (0,'Hello World','English');
+INSERT INTO hello_world_table VALUES (1,'Hei maailma','Finnish');
+INSERT INTO hello_world_table VALUES (2,'Здравей свят','Bulgarian');
+INSERT INTO hello_world_table VALUES (3,'Привет, мир','Russian');
+INSERT INTO hello_world_table VALUES (4,'Përshendetje Botë','Albanian');
+INSERT INTO hello_world_table VALUES (5,'Hallo Welt','German');
+INSERT INTO hello_world_table VALUES (6,'Hallo Wereld','Dutch');
+INSERT INTO hello_world_table VALUES (7,'Bonjour le monde','French');
+INSERT INTO hello_world_table VALUES (8,'Hola Mundo','Spanish');
+INSERT INTO hello_world_table VALUES (9,'Pozdravljen, svet','Slovenian');
